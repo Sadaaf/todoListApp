@@ -13,9 +13,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-
-const password ="W7j8vk43JoCS1zNZ";
-mongoose.connect("mongodb+srv://admin-sadaf:"+password+"@cluster0.mhhvhpo.mongodb.net/todolistDB");
+const username = "Please replace this with your username";
+const password = "Please replace this with your password";
+mongoose.connect("mongodb+srv://"+username+":"+password+"@cluster0.mhhvhpo.mongodb.net/todolistDB");
 
 const itemsSchema = {
   name: String
